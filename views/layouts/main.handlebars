@@ -9,51 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/assets/css/burger_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
-  
-    <div class="container">
-      
-      <br>
-
-      <center>
-        <div class="row">
-            <h1>Eat Da Burger!</h1>
-            <img src="/assets/img/burger.png" width="300"><br>
-        </div>
-      </center>
 
       <!-- content from index.handlebars -->
       {{{body}}}
 
-      <br><br>
 
-      <!-- New Burgers Form -->
-      <form action="burger/create" method="POST"> 
-        
-        <div class="row">
-          <div class="col-md-3"></div> 
-
-          <!-- Burger Input Box -->
-          <div class="form-group col-md-6">
-            <center><label for="new_burger">Request a new burger and place your order!</label></center>
-            <textarea class="form-control" columns="6" rows="3" id="new_burger" name="burger_name"></textarea>
-          </div>
-
-          <div class="col-md-3"></div> 
-        </div>
-      
-        <center>
-          <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
-        </center>
-
-      </form>
-
-      <br>
-
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
   </body>
 </html>
